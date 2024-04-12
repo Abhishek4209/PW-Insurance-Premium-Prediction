@@ -5,4 +5,5 @@ numpy
 seaborn
 jupyter
 xgboost
--e .
+ipykernel
+# -e .
