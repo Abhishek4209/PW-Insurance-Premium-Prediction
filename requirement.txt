@@ -1,8 +1,0 @@
-Flask
-scikit-learn
-pandas 
-numpy
-seaborn
-jupyter
-xgboost
-

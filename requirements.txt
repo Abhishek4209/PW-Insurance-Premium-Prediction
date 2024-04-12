@@ -1,7 +1,8 @@
 Flask
 scikit-learn
-pandas
+pandas 
 numpy
 seaborn
 jupyter
 xgboost
+-e .

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainSection {
+    background-image: url(images/ULIPs_and_their_Benefits_copy_big.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .container{
+    background-color: #fff;
+    height: 500px;
+    width: 80%;
+    padding: 30px ;
+  }
+
+  .heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+.prediction label{
+    display: block;
+    margin: 4px;
+}
+  
+.prediction input{
+    width: 100%;
+    padding: 5px;
+}
+.prediction select{
+    width: 100%;
+    padding: 5px;
+}
+
+.prediction button{
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    background-color: blue;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.prediction a{
+    font-size: 16px;    
+    text-align: right;
+}
+.homebutton{
+    text-align: right;
+}
+  
+@media(min-width:768px){
+    .container{
+        background-color: #fff;
+        height: 500px;
+        width: 50%;
+        padding: 30px ;
+      }
+}
+  
+@media(min-width:992px){
+    .container{
+        background-color: #fff;
+        height: 500px;
+        width: 40%;
+        padding: 30px ;
+      }
+}
+
+@media(min-width:1024px){
+    .container{
+        background-color: #fff;
+        height: 500px;
+        width: 35%;
+        padding: 30px ;
+      }
+}

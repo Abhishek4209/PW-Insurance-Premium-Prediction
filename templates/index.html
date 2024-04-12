@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Premium Prediction</title>
+  <style>
+    body {
+      text-align: center;
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Insurance Premium Prediction</h1>
+
+  <p> Most people do not buy Health insurance thinking that it will cost higher money for premium but, the insurance premium price depends on various factors. In this project we have build a ML model
+      that can predict medical expenses based on several features of an individual such as age,gender,body mass index (BMI),region and No. of Children so that, a Person can choose health insurance plan
+      accordingly by keeping the projected cost from our study in mind. Also it will help medical insurance companies to make decision on charging the premium for particular customer.
+  </p>
+  <h3>
+    To get a prediction of your insurance premium, please fill out the form below.
+  </h3>
+  
+  <form action="/get-prediction" method="post">
+    <button type="submit">Get Prediction-Form</button>
+  </form>
+
+</body>
+
+</html>
