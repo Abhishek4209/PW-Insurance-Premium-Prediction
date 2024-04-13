@@ -1,4 +1,6 @@
 ## Insurance Premium Prediction
+
+![plate](./offer_latter.png)
 ![plate](./prediction.png)
 
 ### Overview
