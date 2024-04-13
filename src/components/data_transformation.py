@@ -46,7 +46,7 @@ class DataTransformation:
             # Pipeline intialize
             preprocessors = ColumnTransformer(
                 transformers=[
-                    ('trf1',OneHotEncoder(sparse=False,handle_unknown='ignore'),categorical_features),
+                    ('trf1',OneHotEncoder(sparse_output=False,handle_unknown='ignore'),categorical_features),
                     ('trf2',StandardScaler(),numeric_features),
                             ],remainder='passthrough'
                         ) 
@@ -79,7 +79,7 @@ class DataTransformation:
             preprocessing_obj=self.get_data_transformation_object()
             
             target_column_name="expenses"
-            drop_columns=[target_column_name,"id"]
+            drop_columns=[target_column_name]
             
             
             # Feature devide  into independet and depedent features
@@ -103,7 +103,7 @@ class DataTransformation:
             
             save_object(
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
-                obj=preprocessor_obj)
+                obj=preprocessing_obj)
             
             logging.info("Preprocessor pickle in create and saved")
             
@@ -114,6 +114,5 @@ class DataTransformation:
             )
             
         except Exception as e:
-            loging.info("Exception occured in the initiate_datatransformation")
-            
+            logging.info("Exception occured in the initiate_data_transformation")
             raise CustomException(e,sys)
