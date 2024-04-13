@@ -1,5 +1,5 @@
 ## Insurance Premium Prediction
-![plate](./example.png)
+![plate](./prediction.png)
 
 ### Overview
 ```
