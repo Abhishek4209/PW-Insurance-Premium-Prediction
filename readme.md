@@ -3,10 +3,13 @@
 ![plate](./offer_latter.png)
 ![plate](./prediction.png)
 
-### Overview
-```
-This project aims to predict insurance premiums for individuals based on various factors such as age, gender, BMI, smoking habits, and region. The prediction model utilizes machine learning techniques to provide accurate estimates of insurance premiums, helping insurance companies make informed decisions and individuals plan their expenses effectively.
-```
+### Problem Statement:  
+The goal of this project is to give people an estimate of how much they need based on 
+their individual health situation. After that, customers can work with any health 
+insurance carrier and its plans and perks while keeping the projected cost from our 
+study in mind. This can assist a person in concentrating on the health side of an 
+insurance policy rather han the ineffective part
+
 
 ### Dataset
 ```
@@ -33,6 +36,10 @@ To use the insurance premium prediction model:
 
 ```
 The performance of the prediction model is evaluated using metrics such as mean absolute error (MAE), mean squared error (MSE), and R-squared value on the test set. These metrics provide insights into the accuracy and reliability of the model in predicting insurance premiums.
+```
+### Demo Video:-
+```bash
+https://www.youtube.com/watch?v=ypIsFoGzY6o&t=7s
 ```
 
 ### Future Work
