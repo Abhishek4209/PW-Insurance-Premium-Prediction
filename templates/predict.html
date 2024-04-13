@@ -1,60 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prediction page</title>
-    <link rel="stylesheet" href= "../static/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .body{
+    background-color:rgb(172, 215, 227);
+    text-align: center;
+    color:rebeccapurple;
+  }
+</style>
 </head>
 
-<body>
-    <section class="mainSection">
-        <div class="container">
-            <h2 class="heading">Insurance Prediction</h2>
+<body class="body">
+  <form action="{{url_for('predict_datapoint')}}" method="POST">
+      <div class="form-group">
 
-            <div class="prediction">
 
-                <form action="/predict" method="post">
+          <label for="age">age:</label>
+          <input type="text" id="age" name="age" placeholder="Enter age value">
+      </div>
+  
+ 
+      <div class="form-group">
+        <label for="sex">sex:</label>
+        <select id="sex" name="sex">
+          <option value="male">male</option>
+          <option value="female">female</option>
+      
+        </select>
+      </div>
+        
+ 
+      <div class="form-group">  
+          <label for="bmi">bmi:</label>
+          <input type="text" id="bmi" name="bmi" placeholder="Enter bmi value (float)">
+      </div>
+     
+      <div class="form-group">
+          <label for="children">children:</label>
+          <input type="text" id="children" name="children" placeholder="Enter children value (float)">
+      </div>
+ 
+      <div class="form-group">
+        <label for="smoker">smoker:</label>
+        <select id="smoker" name="smoker">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+      
+        </select>
+      </div>
+ 
+  
+      <div class="form-group">
+        <label for="region">region:</label>
+        <select id="region" name="region">
+          <option value="southeast">southeast</option>
+          <option value="southwest">southwest</option>
+          <option value="northwest">northwest</option>
+          <option value="northeast">northeast</option>
+        
+      
+        </select>
+      </div>
+    
+ 
+  
+  
+  
+  <div style="clear:both;"></div>
+    <input href="" type="submit" value="Submit">
+  </form>
+ 
 
-                    <label for="age">Age:</label>
-                    <input type="number" name="age" placeholder="Enter your age" required><br>
-
-                    <label for="sex">Sex:</label>
-                    <select name="sex" required>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select><br>
-
-                    <label for="smoker">Smoker:</label>
-                    <select name="smoker" required>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select><br>
-
-                    <label for="children">Children:</label>
-                    <input type="number" name="children" placeholder="Enter number of children" required><br>
-
-                    <label for="region">Region:</label>
-                    <select name="region" required>
-                        <option value="southwest">Southwest</option>
-                        <option value="southeast">Southeast</option>
-                        <option value="northwest">Northwest</option>
-                        <option value="northeast">Northeast</option>
-                    </select><br>
-
-                    <label for="bmi">BMI:</label>
-                    <input type="number" step="0.01" name="bmi" required><br><br>
-
-                    <button type="submit">Predict</button>
-                </form>
-                <div class="homebutton">
-                    <a class="" href="/">Go Back To Homepage</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-</body>
-
+  expenses: {{final_result}}
+  </body>
 </html>

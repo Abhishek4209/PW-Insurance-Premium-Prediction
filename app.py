@@ -14,19 +14,17 @@ def home_page():
 
 def predict_datapoint():
     if request.method=='GET':
-        return render_template('form.html')
+        return render_template('predict.html')
     
     else:
         data=CustomData(
-            carat=float(request.form.get('carat')),
-            depth = float(request.form.get('depth')),
-            table = float(request.form.get('table')),
-            x = float(request.form.get('x')),
-            y = float(request.form.get('y')),
-            z = float(request.form.get('z')),
-            cut = request.form.get('cut'),
-            color= request.form.get('color'),
-            clarity = request.form.get('clarity')
+            age=float(request.form.get('age')),
+            sex = request.form.get('sex'),
+            bmi = float(request.form.get('bmi')),
+            children = float(request.form.get('children')),
+            smoker = request.form.get('smoker'),
+            region= request.form.get('region')
+            
         )
         final_new_data=data.get_data_as_dataframe()
         predict_pipeline=PredictPipeline()
@@ -34,7 +32,7 @@ def predict_datapoint():
 
         results=round(pred[0],2)
 
-        return render_template('form.html',final_result=results)
+        return render_template('predict.html',final_result=results)
     
 
 if __name__=="__main__":
