@@ -1,4 +1,5 @@
 ## Insurance Premium Prediction
+![plate](./example.png)
 
 ### Overview
 ```
@@ -51,4 +52,4 @@ ABHISHEK UAPDHYAY
 
 Feel free to modify and use this README template according to your project's specific requirements!
 
-![plate](./example.png)
+
