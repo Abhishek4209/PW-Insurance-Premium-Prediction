@@ -32,7 +32,7 @@ To use the insurance premium prediction model:
 
 * Ensure you have Python installed on your system.
 * Install the necessary Python libraries specified in the requirements.txt file.
-* Run the provided Python script (predict_premium.py) after providing the required input data.
+* Run the provided Python script (app.py) after providing the required input data.
 * The script will output the predicted insurance premiums for the given input.
  ```
  
