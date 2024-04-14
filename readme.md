@@ -59,7 +59,8 @@ To use the insurance premium prediction model:
 ## Evaluation:
 
 ```
-The performance of the prediction model is evaluated using metrics such as mean absolute error (MAE), mean squared error (MSE), and R-squared value on the test set. These metrics provide insights into the accuracy and reliability of the model in predicting insurance premiums.
+The performance of the prediction model is evaluated using metrics such as mean absolute error (MAE), mean squared error (MSE), and R-squared value on the test set.
+These metrics provide insights into the accuracy and reliability of the model in predicting insurance premiums.
 ```
 
 
