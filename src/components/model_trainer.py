@@ -12,6 +12,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRegressor
+from sklearn.neighbors import KNeighborsRegressor
 
 
 
@@ -39,6 +40,7 @@ class ModelTrainer:
             'RandomForestRegressor':RandomForestRegressor(),
             'LinearRegression':LinearRegression(),
             'DecisionTreeRegressor':DecisionTreeRegressor(),
+            "KNeighborsRegressor": KNeighborsRegressor(n_neighbors=5,p=2,algorithm="auto"),
             'XGBRegressor':XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=1,
             early_stopping_rounds=None, enable_categorical=False,
