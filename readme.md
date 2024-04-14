@@ -35,7 +35,11 @@ Applying machine learing tasks like Data Exploration, Data Cleaning, Feature Eng
 
 - **Model Selection :** Tested all the models to check the RMSE & R-squared.
 - **Pickle File** : Selected model as per best RMSE score & R-squared and created pickle file using pickle library.
+<<<<<<< HEAD
 - **Webpage &Deployment :** Created a web application that takes all the necessary inputs from the user & shows the output. Then deployed project on the AWS Platform.
+=======
+- **Webpage &Deployment :** Created a web application that takes all the necessary inputs from the user & shows the output. Then deployed project on the Heroku Platform.
+>>>>>>> bc6ac5c4f91f55061482a3a8b501cdb844a3cbdc
 
 
 
